@@ -1,0 +1,141 @@
+.listings-container {
+  width: 70%;
+  height: 120px;
+  background-color: white;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 20px hsl(180, 29%, 50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-info {
+  display: flex;
+  padding: 10px;
+  width: 50%;
+}
+
+.list-info img {
+  margin-right: 10px;
+}
+.info {
+  width: 100%;
+}
+.info p {
+  margin-bottom: 10px;
+  color: hsl(180, 29%, 50%);
+  font-weight: 600;
+  padding-top: 2px;
+}
+.info span {
+  display: flex;
+}
+.new {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  margin-left: 5px;
+  width: 30px;
+  height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 6px;
+  font-size: 10px;
+}
+
+.feature {
+  background-color: hsl(180, 14%, 20%);
+  color: white;
+  margin-left: 5px;
+  width: 50px;
+  height: 20px;
+  text-align: center;
+  border-radius: 10px;
+  padding-top: 6px;
+  font-size: 10px;
+}
+.info h3 {
+  color: hsl(180, 14%, 20%);
+  font-weight: 900;
+}
+
+.info ul {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0px;
+  width: 85%;
+  font-size: 14px;
+  color: hsl(180, 8%, 52%);
+  font-weight: 900;
+}
+.tools {
+  width: 50%;
+}
+.tools ul {
+  display: flex;
+  list-style: none;
+}
+.tools li {
+  margin: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: hsl(180, 29%, 50%);
+  background-color: hsla(180, 8%, 52%, 0.226);
+  height: 25px;
+  width: 65px;
+  text-align: center;
+  padding-top: 6px;
+  border-radius: 3px;
+}
+.tools li:hover {
+  background-color: hsl(180, 29%, 50%);
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  .listings-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: auto;
+    width: 70%;
+  }
+
+  .list-info {
+    flex-direction: column;
+    width: 100%;
+  }
+  .list-info p {
+    margin-right: 15px;
+  }
+  .list-info img {
+    /* display: none; */
+
+    position: relative;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+  }
+  .info ul {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .info li {
+    margin-right: 10px;
+  }
+  .tools {
+    width: 100%;
+  }
+  .tools ul {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .tools li {
+    text-align: center;
+    margin-right: 4px;
+    margin-top: 0px;
+  }
+}

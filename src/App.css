@@ -1,0 +1,82 @@
+.container {
+  width: 100%;
+  height: auto;
+  background-color: hsl(180, 52%, 96%);
+}
+.header {
+  width: 100%;
+  background-image: url("./components/images/bg-header-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  background-color: hsl(180, 29%, 50%);
+}
+.search {
+  position: absolute;
+  left: 25%;
+  top: 21%;
+  width: 50%;
+  height: auto;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px -5px 20px hsl(180, 29%, 50%);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-right: 50px;
+}
+.clear {
+  position: absolute;
+  right: 5%;
+  color: hsl(180, 29%, 50%);
+  font-weight: 600;
+  cursor: pointer;
+}
+.tags {
+  color: hsl(180, 29%, 50%);
+  background-color: hsla(180, 8%, 52%, 0.226);
+  height: 25px;
+  text-align: center;
+  margin: 10px;
+  font-weight: 600;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.tags p {
+  margin-left: 2px;
+  font-size: 13px;
+}
+.tags span {
+  width: 25px;
+  margin-left: 5px;
+  padding-top: 5px;
+  background-color: hsl(180, 29%, 50%);
+  height: 25px;
+  color: white;
+
+  border-radius: 0 5px 5px 0px;
+}
+.tags span:hover {
+  background-color: hsl(180, 14%, 20%);
+  cursor: pointer;
+}
+
+.body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(180, 52%, 96%);
+  align-items: center;
+  padding-top: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .search {
+    width: 70%;
+    left: 15%;
+    padding-right: 15px;
+  }
+}
